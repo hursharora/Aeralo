@@ -1,0 +1,14 @@
+{
+  "name": "aeroplan-scraper-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "scrape": "node src/cli.js",
+    "test": "node --test",
+    "demo": "node src/cli.js --replay test/fixtures/graphql.json --out output/demo",
+    "install-browser": "playwright install chromium"
+  },
+  "dependencies": { "playwright": "1.65.0" }
+}

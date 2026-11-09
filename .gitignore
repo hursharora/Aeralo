@@ -1,0 +1,8 @@
+node_modules/
+output/
+.profiles/
+.browser-libs/
+.env
+.env.*
+!.env.example
+*.har

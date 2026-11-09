@@ -1,0 +1,33 @@
+{
+  "fixtureNotice": "SYNTHETIC example for parser tests. These are not real flights, fares, or availability.",
+  "data": {
+    "getFareRedemption": {
+      "searchInformation": { "currency": "CAD", "sessionID": "example-session" },
+      "bound": [{
+        "boundSolution": [{
+          "flightSegments": [
+            { "flightNumber": "101", "originAirport": "YVR", "destinationAirport": "SFO", "scheduledDepartureDateTime": "2027-02-10T08:00:00-08:00", "scheduledArrivalDateTime": "2027-02-10T10:15:00-08:00", "airline": { "marketingCode": "AC", "operatingCode": "AC" } },
+            { "flightNumber": "201", "originAirport": "SFO", "destinationAirport": "NRT", "scheduledDepartureDateTime": "2027-02-10T12:00:00-08:00", "scheduledArrivalDateTime": "2027-02-11T16:00:00+09:00", "airline": { "marketingCode": "UA", "operatingCode": "UA" } }
+          ],
+          "fare": {
+            "cabins": [{
+              "cabinCode": "J", "cabinName": "Business",
+              "fareAvailable": [{
+                "fareFamily": "Lowest",
+                "bookingClass": [
+                  { "marketingCode": "AC", "flightNumber": "101", "noOfSeats": 3, "segmentCabinName": "Economy", "selectionID": "example-only" },
+                  { "marketingCode": "UA", "flightNumber": "201", "noOfSeats": null, "segmentCabinName": "Business" }
+                ],
+                "mixedCabin": [{ "marketingCode": "AC", "flightNumber": "101", "actualCabinName": "Economy" }],
+                "redemptionBooking": {
+                  "cashPortion": { "fareTotal": 112.34, "currencyCode": "CAD" },
+                  "pointsPortion": { "fareTotalPoints": 75000 }
+                }
+              }]
+            }]
+          }
+        }]
+      }]
+    }
+  }
+}
